@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("/gfont.ttf");
+}
+html * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  text-wrap: wrap;
+  font-family: "Product Sans";
+  font-weight: 400;
+  color: #f3f3f3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html *::selection {
+  background: #389dfc;
+  color: #0e0e0e;
+}
+html * #root {
+  background: #232323;
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

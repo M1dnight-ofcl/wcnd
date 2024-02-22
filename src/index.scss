@@ -1,0 +1,40 @@
+$bg1:#191919;
+$bg2:#232323;
+$bg3:#0e0e0e;
+$bg4:#272727;
+$bg5:#2e2e2e;
+$txt1:#f3f3f3;
+$txt2:#d7d7d7;
+$txt3:#c2c2c2;
+
+$active:#389dfc;
+$active_outline: 1px solid $active;
+
+$outline: 1px solid #4a4a4a;
+$g-pad: 3.5vmin;
+$g-trans: .35s;
+$g-bordrad: 1.5vmin ;
+$g-glow: drop-shadow(0,0,1vmin,#ffffff75);
+
+@font-face {
+  font-family:'Product Sans';
+  src: url('/gfont.ttf');
+}
+
+html *{
+  margin:0;
+  padding:0;
+  position:relative;
+  box-sizing:border-box;
+  word-wrap: break-word;
+  text-wrap: wrap;
+  // font-family: main;
+  font-family:'Product Sans';
+  font-weight: 400;
+  color: $txt1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &::selection{background: $active; color: $bg3;}
+  #root{ background:$bg2; height: 100dvh; width: 100dvw; position: fixed; display: flex; }
+}
